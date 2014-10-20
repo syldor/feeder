@@ -4,16 +4,19 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Brainer</title>
+	<title>Feeder</title>
 
   <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
 
   <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css"/>
 
-  <link rel="stylesheet" href="css/dashboard/dashboard.css"/>
+  <link rel="stylesheet" href="css/dashboard.css"/>
+  <link rel="stylesheet" href="css/square.css"/>
 
   <!-- SCRIPTS -->
+  <script src="bower_components/ng-file-upload/angular-file-upload-shim.min.js"></script> 
   <script src="lib/angular/angular.js"></script>
+  <script src="bower_components/ng-file-upload/angular-file-upload.min.js"></script> 
   <script src="lib/angular-route/angular-route.js"></script>
   <script src="lib/angular-cookies/angular-cookies.js"></script>
   <script src="lib/angular-bootstrap/ui-bootstrap.js"></script>
@@ -21,9 +24,10 @@
   <script src="lib/angular-ui-router/angular-ui-router.js"></script>
 
   <script src="app.js"></script>
+  <script src="components/services/config_s.js"></script>
   <script src="components/menu/menu_c.js"></script>
   <script src="components/top_bar/top_bar_c.js"></script>
-  <script src="components/dashboard/dashboard_c.js"></script>
+  <script src="components/insert/insert_c.js"></script>
   <script src="components/tables/tables_c.js"></script>
   <!-- SCRIPTS -->
 

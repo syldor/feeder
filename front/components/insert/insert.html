@@ -1,0 +1,22 @@
+<div>
+  <div class="row">
+    <div class="col-md-2">Name: <input type="text" class="form-control boq-input-small" ng-model="name"></div>
+    <div class="col-md-2">Description: <input type="text" class="form-control boq-input-small" ng-model="description"></div>
+  </div>
+  <input type="file" ng-file-select="onFileSelect($files)">
+  <div class="col-md-8">
+    <table class="table">
+      <thead>
+        <tr>
+          <th ng-repeat="header in headers">{{header}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="line in data">
+            <td ng-repeat="info in line track by $index">{{info}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+    

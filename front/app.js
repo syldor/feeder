@@ -1,22 +1,22 @@
 'use strict';
 
 var app = angular.module('app', [
-  'ngRoute', 'app.directives', 'ui.bootstrap', 'ngCookies'
+  'ngRoute', 'app.directives', 'ui.bootstrap', 'ngCookies', 'angularFileUpload'
 ]).
 config([
     '$routeProvider', function($routeProvider) {
   return $routeProvider.when('/', {
-    redirectTo: '/dashboard'
+    redirectTo: '/tables'
   })
-  .when('/dashboard', {
-    templateUrl: 'components/dashboard/dashboard.html',
-    controller: 'DashboardCtrl'
+  .when('/insert', {
+    templateUrl: 'components/insert/insert.html',
+    controller: 'InsertCtrl'
   })
   .when('/tables', {
     templateUrl: 'components/tables/tables.html',
     controller: 'TablesCtrl'
   })
-  .otherwise({redirectTo: '/dashboard'});
+  .otherwise({redirectTo: '/tables'});
 }]);
 
 angular.module('app.directives', []);
